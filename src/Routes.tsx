@@ -16,10 +16,10 @@ const MainRoutes = () => {
             <Route path='/' element={<Home />} />
             <Route path='/header' element={<Header />} />
             <Route path='/footer' element={<Footer />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/service' element={<Service />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Services' element={<Service />} />
+            <Route path='/Blogs' element={<Blog />} />
+            <Route path='/Contact' element={<Contact />} />
         </Routes>
         <Footer />
     </div>

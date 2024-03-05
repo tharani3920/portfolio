@@ -13,10 +13,10 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto">
           <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
-          <Nav.Link href="/about" className='nav-link'>About</Nav.Link>
-          <Nav.Link href="/service" className='nav-link'>Service</Nav.Link>
-          <Nav.Link href="/blog" className='nav-link'>Blog</Nav.Link>
-          <Nav.Link href="/contact" className='nav-link'>Contact</Nav.Link>
+          <Nav.Link href="/About" className='nav-link'>About</Nav.Link>
+          <Nav.Link href="/Services" className='nav-link'>Service</Nav.Link>
+          <Nav.Link href="/Blogs" className='nav-link'>Blog</Nav.Link>
+          <Nav.Link href="/Contact" className='nav-link'>Contact</Nav.Link>
 
           {/* <NavDropdown title="More" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">

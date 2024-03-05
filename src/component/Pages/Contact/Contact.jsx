@@ -1,8 +1,11 @@
 import React from 'react'
+import Breadcrumbs from '../../ReUsableComponent/Breadcrumbs'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Breadcrumbs />
+    </div>
   )
 }
 
