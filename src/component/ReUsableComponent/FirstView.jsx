@@ -15,7 +15,7 @@ const FirstView = () => {
   return (
     <>
       <div className="first-view-back pt-5 ">
-        <div className="container bg-white p-4 rounded">
+        <div className="container bg-white p-4 rounded white-div">
           <Container className="">
             <Row>
               <Col sm={12} md={7}>

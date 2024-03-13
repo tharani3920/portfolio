@@ -52,9 +52,9 @@ const Footer = () => {
               <CDBBtn flat outline color="light" className="me-auto p-2">
                 <CDBIcon fab icon="facebook-f" />
               </CDBBtn>
-              <CDBBtn flat outline color="light" className="me-auto p-2">
+              {/* <CDBBtn flat outline color="light" className="me-auto p-2">
                 <CDBIcon fab icon="twitter" />
-              </CDBBtn>
+              </CDBBtn> */}
               <CDBBtn flat outline color="light" className="me-auto p-2">
                 <CDBIcon fab icon="linkedin-in" />
               </CDBBtn>
