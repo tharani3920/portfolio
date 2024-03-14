@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, ProgressBar, Row } from "react-bootstrap";
 import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
 import resume from "../../assets/tharani.pdf"
+import {gsap} from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
+  const progressBarsRef = useRef([]);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    progressBarsRef.current.forEach((progressBar, index) => {
+      gsap.from(progressBar, {
+        scrollTrigger: {
+          trigger: progressBar,
+          start: "top 80%", // Adjust as needed
+          end: "bottom 20%", // Adjust as needed
+          toggleActions: "play none none none",
+        },
+        scaleX: 0,
+        duration: 1,
+        delay: index * 0.2, // Delay each animation for better visual effect
+      });
+    });
+  }, []);
   return (
     <div>
       <section className="container" style={{ marginBottom: "2rem" }}>
@@ -35,7 +55,7 @@ const AboutMY = () => {
                       <BiCoinStack />{" "}
                     </span>
                     <h4 style={{ marginTop: "10px" }}>₹3.5K</h4>
-                    <p>Total Donation</p>
+                    <p className="p-font">Total Donation</p>
                   </div>
                 </Col>
                 <Col sm={12} md={4}>
@@ -45,7 +65,7 @@ const AboutMY = () => {
                       <LuBookMinus />{" "}
                     </span>
                     <h4 style={{ marginTop: "10px" }}>2</h4>
-                    <p>Total Projects</p>
+                    <p className="p-font">Total Projects</p>
                   </div>
                 </Col>{" "}
                 <Col sm={12} md={4}>
@@ -55,7 +75,7 @@ const AboutMY = () => {
                       <IoMdContacts />{" "}
                     </span>
                     <h4 style={{ marginTop: "10px" }}>27</h4>
-                    <p>Total Volunteers</p>
+                    <p className="p-font">Total Volunteers</p>
                   </div>
                 </Col>
               </Row>
@@ -63,24 +83,24 @@ const AboutMY = () => {
           </Col>
           <Col sm={12} md={6} className="media-col">
             <p className="progress-title">Designing 85%</p>
-            <div className="porgress-div">
+            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
               <ProgressBar animated now={85} className="progress-bar-color" />
             </div>
             <p className="progress-title">Web Development 90% </p>
-            <div className="porgress-div">
+            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
               <ProgressBar animated now={90} className="progress-bar-color" />
             </div>
             <p className="progress-title">Overall Coding 75%</p>
-            <div className="porgress-div">
+            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
               <ProgressBar animated now={75} className="progress-bar-color" />
             </div>
             <p className="progress-title">Back-end 55%</p>
-            <div className="porgress-div">
+            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
               <ProgressBar animated now={55} className="progress-bar-color" />
             </div>
-            <p className="progress-title">Learning Skills 65%</p>
-            <div className="porgress-div">
-              <ProgressBar animated now={65} className="progress-bar-color" />
+            <p className="progress-title">Learning Skills 80%</p>
+            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
+              <ProgressBar animated now={80} className="progress-bar-color" />
             </div>
           </Col>
         </Row>

@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { gsap } from 'gsap';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Header = () => {
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+    tl.from(".nav-heading", { y: -50, opacity: 0, duration: 1, delay: 0.2 })
+      .from(".nav-link", { y: -50, opacity: 0, duration: 0.5, stagger: 0.2 }, "-=0.5");
+
+  }, []);
   return (
     <Navbar expand="lg" className="bg-info p-4">
     <Container>

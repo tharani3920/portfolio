@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FirstView from "../ReUsableComponent/FirstView";
 import AboutMY from "../ReUsableComponent/AboutMY";
 import { Button, Container } from "react-bootstrap";
+import OfferClient from "../ReUsableComponent/OfferClient";
 
 const Home = () => {
   const [selectedTab, setSeclectedTab] = useState('experience')
@@ -65,6 +66,7 @@ const Home = () => {
 
       </div>
      </section>
+     <OfferClient />
     </>
   );
 };

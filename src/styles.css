@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 a{
     text-decoration: none;
 }
 .nav-heading{
     font-size: 2rem;
     color: white;
+    font-family: poppins;
 }
 .nav-link{
     color: white;
     font-size: 20px;
     margin-right: 10px;
+    font-family: poppins;
 }
 .footer-p{
     font-size: 14px;
     color: #777777;
+    font-family: poppins;
 }
 .footer-wrapper {
     /* position: fixed; */
@@ -40,7 +44,7 @@ a{
     text-transform: uppercase;
 }
 .my-descri{
-    font-family: Roboto, sans-serif;
+    font-family: poppins, sans-serif;
     max-width: 500px;
     color: rgb(119, 119, 119);
     margin-bottom: 30px;
@@ -52,10 +56,22 @@ a{
 .my-info{
     font-size: 16px;
     color: rgb(119, 119, 119);
+    font-family: poppins;
+}
+.p-font{
+  font-family: poppins;
+  font-size: 14px;
+}
+#form5Example2 {
+  font-family: 'Poppins', sans-serif;
+}
+.my-links{
+  transition: margin-top 0.2s ease-in-out;
 }
 .my-links:hover{
     /* background-color: aqua !important; */
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) !important;
+    margin-top: -3px;
 }
 .breadcrumb-div{
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
@@ -69,7 +85,7 @@ a{
 .bread-title{
     color:white;
     font-size: 48px;
-    font-family: Heebo, sans-serif;
+    font-family: poppins, sans-serif;
     margin-bottom: 0px;
     font-weight: bold;
 }
@@ -89,7 +105,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .about-div p{
-    color: rgb(119, 119, 119)
+    color: rgb(119, 119, 119);
 }
 .about-icon{
     font-size: 25px;
@@ -103,7 +119,7 @@ a{
     margin-bottom: 25px;
 }
 .progress-title{
-    font-family: Roboto, sans-serif;
+    font-family: poppins, sans-serif;
     font-weight: bolder;
     font-size: 14px;
 }
@@ -121,7 +137,7 @@ a{
     background-color: #fcfcfc;
     color: #ffa000;
     font-weight: bolder;
-    font-family: sans-serif;
+    font-family: poppins;
     text-align: center;
     font-size: 18px;
     padding: 9px 0;
@@ -175,7 +191,7 @@ a{
   .edu-exp-sec{
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
     width: 100%;
-    height: 100vh;
+    height: 105vh;
   }
   .edu-exp-bdiv{
     gap: 3rem;
@@ -189,6 +205,7 @@ a{
     font-weight: 600;
     color: #ffffff;
     line-height: 50px;
+    font-family: poppins;
   }
   .selected{
     background-color: #ffffff;
@@ -218,15 +235,82 @@ a{
     border: 5px solid lightblue;
   }
   .year{
-    color: #ffffff;
-    font-size: 18px;
+    color: #ffffffbf;
+    font-size: 16px;
     font-weight: 600;
     width: 180px;
+    font-family: poppins;
   }
   .year-data{
     color: #ffffff;
     width: 225px;
+    font-family: poppins;
   }
+  .year-data p{
+    color: #ffffffbf;
+  }
+  .subcribe-btn{
+    background-image:  -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) !important;
+    border: none !important;
+    font-family: poppins;
+  }
+.hover-eff{
+  /* margin-left: 0; */
+  transition: margin-left 0.2s ease-in-out;
+}
+.hover-eff:hover{
+  margin-left: 5px;
+  cursor:pointer;
+}
+.typewriter-word{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.typewrite-txt-type{
+  border-right: 2px solid;
+}
+.offer-des{
+  max-width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: #777777;
+  text-align: center;
+  line-height: 26px;
+}
+.offer-service{
+  border-radius: 10px;
+  /* width: 350px; */
+  background-color: #fff;
+  padding: 35px;
+  margin-bottom: 5rem;
+  transition: margin-top 0.3s ease-in-out;
+}
+.offer-icons{
+  font-size: 5rem;
+  color: #e1e1e1;
+  margin-bottom: 20px;
+}
+.offer-icon-des{
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: #777777;
+  line-height: 26px;
+  margin-bottom: 0rem;
+}
+.offer-service:hover{
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  margin-top: -10px;
+  .offer-icons{
+    color: #88f3ff;
+  }
+}
+.offer-icon-head{
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #222222;
+  font-family: poppins;
+}
 /*edia query */
 @media (max-width: 768px){
     .my-img{

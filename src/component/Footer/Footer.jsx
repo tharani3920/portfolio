@@ -35,7 +35,7 @@ const Footer = () => {
               contrast
             />
 
-            <MDBBtn outline color="light" className="mt-4" type="button">
+            <MDBBtn outline color="light" className="mt-4 subcribe-btn" type="button">
               Subscribe
             </MDBBtn>
           </MDBCol>
@@ -49,17 +49,23 @@ const Footer = () => {
               style={{ width: "100%" }}
               className="mx-auto mt-3"
             >
-              <CDBBtn flat outline color="light" className="me-auto p-2">
+              <CDBBtn flat outline color="light" className="me-auto my-links p-2">
+              <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL" >
                 <CDBIcon fab icon="facebook-f" />
+                </a>
               </CDBBtn>
               {/* <CDBBtn flat outline color="light" className="me-auto p-2">
                 <CDBIcon fab icon="twitter" />
               </CDBBtn> */}
-              <CDBBtn flat outline color="light" className="me-auto p-2">
+              <CDBBtn flat outline color="light" className="me-auto my-links  p-2">
+              <a href="https://www.linkedin.com/in/tharani3920/" >
                 <CDBIcon fab icon="linkedin-in" />
+                </a>
               </CDBBtn>
-              <CDBBtn flat outline color="light" className="me-auto p-2">
+              <CDBBtn flat outline color="light" className="me-auto my-links  p-2">
+              <a href="https://www.instagram.com/tharanimatheswaran?igsh=NDAybmZja3k0cWh4">
                 <CDBIcon fab icon="instagram" />
+                </a>
               </CDBBtn>
             </CDBBox>
           </MDBCol>
@@ -67,10 +73,10 @@ const Footer = () => {
       </MDBContainer>
 
       <div
-        className="text-center p-3"
+        className="text-center p-3 p-font"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        &copy; {new Date().getFullYear()} Copyright:{" "}
+        &copy; {new Date().getFullYear()} Copyright :{" "}
         <a className="text-white" href="#">
           tharani3920@gmail.com
         </a>
