@@ -4,7 +4,7 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/tharani.pdf"
+import resume from "../../assets/CV_tharani.pdf"
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
@@ -16,13 +16,13 @@ const AboutMY = () => {
       gsap.from(progressBar, {
         scrollTrigger: {
           trigger: progressBar,
-          start: "top 80%", // Adjust as needed
-          end: "bottom 20%", // Adjust as needed
+          start: "top 80%", 
+          end: "bottom 20%", 
           toggleActions: "play none none none",
         },
         scaleX: 0,
         duration: 1,
-        delay: index * 0.2, // Delay each animation for better visual effect
+        delay: index * 0.2,
       });
     });
   }, []);
@@ -51,8 +51,7 @@ const AboutMY = () => {
                 <Col sm={12} md={4}>
                   <div className="about-div">
                     <span className="about-icon">
-                      {" "}
-                      <BiCoinStack />{" "}
+                      <BiCoinStack />
                     </span>
                     <h4 style={{ marginTop: "10px" }}>₹3.5K</h4>
                     <p className="p-font">Total Donation</p>
@@ -61,21 +60,19 @@ const AboutMY = () => {
                 <Col sm={12} md={4}>
                   <div className="about-div">
                     <span className="about-icon">
-                      {" "}
-                      <LuBookMinus />{" "}
+                      <LuBookMinus />
                     </span>
                     <h4 style={{ marginTop: "10px" }}>2</h4>
                     <p className="p-font">Total Projects</p>
                   </div>
-                </Col>{" "}
+                </Col>
                 <Col sm={12} md={4}>
                   <div className="about-div">
                     <span className="about-icon">
-                      {" "}
-                      <IoMdContacts />{" "}
+                      <IoMdContacts />
                     </span>
-                    <h4 style={{ marginTop: "10px" }}>27</h4>
-                    <p className="p-font">Total Volunteers</p>
+                    <h4 style={{ marginTop: "10px" }}>3</h4>
+                    <p className="p-font">Total Collab</p>
                   </div>
                 </Col>
               </Row>

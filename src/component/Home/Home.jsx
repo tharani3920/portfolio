@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="year">May 2023 to present</div>
                 <div className="indicator"></div>
                 <div className="year-data" ><h5>PeerMe Software Technology Pvt., Ltd.,</h5>
-                <p>Junior Software Developer</p></div>
+                <p>Associate Software Developer</p></div>
               </div>
               <div className="myexperience-div" style={{marginTop:"9rem"}}>
                 <div className="year">Jan 2023 to Apr 2023</div>
@@ -58,7 +58,7 @@ const Home = () => {
                   <div className="year">May 2017 to Apr 2018</div>
                   <div className="indicator"></div>
                   <div className="year-data"><h5>12th (Bio)</h5>
-                  <p>Vivekandha Vidhayala Matric Hr., Sec., School.</p></div>
+                  <p>Vivekananda Vidhayala Matric Hr., Sec., School.</p></div>
                 </div>
                 </>)}
           </div>

@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import img from "../../assets/my.jpg";
+import img from "../../assets/my1.jpeg";
 import TypeWriter from "./TypeWriter";
 import { CDBBox, CDBBtn, CDBIcon } from "cdbreact";
 import {gsap} from 'gsap';
@@ -32,7 +32,7 @@ const FirstView = () => {
                   </div>
                   {/* <h6>HELLO EVERYBODY, I AM</h6> */}
                   <p className="fw-bolder my-name">Tharani M</p>
-                  <h6 className="mb-4">JUNIOR SOFTWARE DEVELOPER</h6>
+                  <h6 className="mb-4">ASSOCIATE SOFTWARE DEVELOPER</h6>
                   <p className="my-descri">
                     I am a web alchemist, blending code with creativity to craft
                     responsive masterpieces, all while thriving in the
@@ -79,13 +79,14 @@ const FirstView = () => {
                 </div>
               </Col>
               <Col sm={12} md={5}>
-                <img
+                {/* <img
                   src={img}
                   alt="tharani img"
                   height="100%"
                   width="100%"
                   className="rounded my-img"
-                />
+                /> */}
+                <div className="rounded my-img"></div>
               </Col>
             </Row>
           </Container>
