@@ -1,4 +1,4 @@
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useRef,} from 'react';
 const TypeWriters = ({ words, wait = 3000 }) => {
   const txtElementRef = useRef(null);
   let txt = '';

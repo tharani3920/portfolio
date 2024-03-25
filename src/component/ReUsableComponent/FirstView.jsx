@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import img from "../../assets/my1.jpeg";
+// import img from "../../assets/my1.jpeg";
 import TypeWriter from "./TypeWriter";
 import { CDBBox, CDBBtn, CDBIcon } from "cdbreact";
 import {gsap} from 'gsap';

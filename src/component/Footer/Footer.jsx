@@ -5,7 +5,7 @@ import {
   MDBCol,
   MDBRow,
   MDBBtn,
-  MDBIcon,
+  // MDBIcon,
   MDBInput,
 } from "mdb-react-ui-kit";
 import { CDBBox, CDBBtn, CDBIcon } from "cdbreact";
@@ -77,7 +77,7 @@ const Footer = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         &copy; {new Date().getFullYear()} Copyright :{" "}
-        <a className="text-white" href="#">
+        <a className="text-white" href="https://www.linkedin.com/in/tharani3920/">
           tharani3920@gmail.com
         </a>
       </div>
