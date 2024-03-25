@@ -389,6 +389,10 @@ font-family: "poppins", sans-serif;
 .inside-blog-img:hover{
   background-image:  -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) !important;
 }
+.blog-s{
+  background-image:  -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) !important;
+  padding-bottom: 2rem;
+}
 /*edia query */
 @media (max-width: 768px){
     .my-img{
