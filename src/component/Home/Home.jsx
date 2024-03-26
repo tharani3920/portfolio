@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <FirstView />
-      <div id="About">
+      <div id="About" style={{paddingTop:"5rem"}}>
      <AboutMY />
      </div>
      <section>

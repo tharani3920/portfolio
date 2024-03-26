@@ -356,17 +356,17 @@ a{
 }
 .blog-img{
   padding: 20px;
-  background-image: url(https://c.stocksy.com/a/79gH00/z9/4213589.jpg);
+  background-image: url(../src/assets/food.jpg);
   background-size: cover;
   width: 350px;
   height: 200px;
   margin-top: 20px;
 }
 .blog-img-alt{
-  background-image: url(https://lirp.cdn-website.com/8e5025719cd64e09ad045d8ee663b468/dms3rep/multi/opt/1082599-4925297692-640w.jpg) !important;
+  background-image: url(../src/assets/travel.webp) !important;
 }
 .blog-img-alt1{
-  background-image: url(https://iotcdn.oss-ap-southeast-1.aliyuncs.com/styles/a_share_fb/oss/2020-11/Family-Silhouette-3.jpg) !important;
+  background-image: url(../src/assets/Family.jpg) !important;
 }
 .inside-blog-img{
 position: relative;
@@ -436,5 +436,8 @@ display: none;
       }
       .year{
         font-weight: 200;
+      }
+      .edu-exp-sec{
+        height: 70vh;
       }
 }
