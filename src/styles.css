@@ -254,6 +254,12 @@ a{
     background-image:  -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%) !important;
     border: none !important;
     font-family: poppins;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #ffffff;
+  }
+  .subcribe-btn:hover{
+    color: #000;
   }
 .hover-eff{
   /* margin-left: 0; */

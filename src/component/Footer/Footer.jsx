@@ -10,6 +10,9 @@ import {
 } from "mdb-react-ui-kit";
 import { CDBBox, CDBBtn, CDBIcon } from "cdbreact";
 const Footer = () => {
+  const handlealert = () => {
+    window.alert("just only design not functional")
+  }
   return (
     <div className="footer-wrapper">
     <MDBFooter className="text-white text-lg-left bg-dark">
@@ -35,9 +38,9 @@ const Footer = () => {
               contrast
             />
 
-            <MDBBtn outline color="light" className="mt-4 subcribe-btn" type="button">
+            <button  color="light" className="mt-4 subcribe-btn" type="button" onClick={handlealert}>
               Subscribe
-            </MDBBtn>
+            </button>
           </MDBCol>
 
           <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
