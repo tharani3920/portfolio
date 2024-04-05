@@ -4,7 +4,7 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/CV_tharani.pdf"
+import resume from "../../assets/TharaniM-CV.pdf"
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {

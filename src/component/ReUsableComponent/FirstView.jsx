@@ -35,7 +35,7 @@ const FirstView = () => {
                   <h6 className="mb-4">ASSOCIATE SOFTWARE DEVELOPER</h6>
                   <p className="my-descri">
                     I am a web alchemist, blending code with creativity to craft
-                    responsive masterpieces, all while thriving in the
+                    responsive masterpieces, while thriving in the
                     collaborative symphony of teamwork.
                   </p>
                   <ul className="list-group mb-5 ms-3">

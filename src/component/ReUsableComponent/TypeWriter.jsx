@@ -50,7 +50,7 @@ const TypeWriter = () => {
     <div>
       <h1 className='typewriter-word'>
         <TypeWriters
-          words={[ "Hello EveryBody, I am",]}
+          words={[ "Hello Everyone, I am",]}
           wait={2000}
         />
       </h1>
