@@ -4,8 +4,8 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/TharaniM-CV.pdf"
-import {gsap} from 'gsap';
+import resume from "../../assets/TharaniM-CV.pdf";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
   const progressBarsRef = useRef([]);
@@ -16,8 +16,8 @@ const AboutMY = () => {
       gsap.from(progressBar, {
         scrollTrigger: {
           trigger: progressBar,
-          start: "top 80%", 
-          end: "bottom 20%", 
+          start: "top 80%",
+          end: "bottom 20%",
           toggleActions: "play none none none",
         },
         scaleX: 0,
@@ -40,10 +40,17 @@ const AboutMY = () => {
                 engagement.
               </p>
               <div>
-                <a className="dedcription-btn" href={resume} download="Tharani CV">
+                <a
+                  className="dedcription-btn"
+                  href={resume}
+                  download="Tharani CV"
+                >
                   <span className="name-descripeion">Download CV</span>
                   <div className="btn-icon">
-                 <i> <FaDownload /> </i>
+                    <i>
+                      {" "}
+                      <FaDownload />{" "}
+                    </i>
                   </div>
                 </a>
               </div>
@@ -80,23 +87,38 @@ const AboutMY = () => {
           </Col>
           <Col sm={12} md={6} className="media-col">
             <p className="progress-title">Designing 85%</p>
-            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
               <ProgressBar animated now={85} className="progress-bar-color" />
             </div>
             <p className="progress-title">Web Development 90% </p>
-            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
               <ProgressBar animated now={90} className="progress-bar-color" />
             </div>
-            <p className="progress-title">Overall Coding 75%</p>
-            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
-              <ProgressBar animated now={75} className="progress-bar-color" />
+            <p className="progress-title">Overall Coding 79%</p>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
+              <ProgressBar animated now={79} className="progress-bar-color" />
             </div>
             <p className="progress-title">Back-end 55%</p>
-            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
               <ProgressBar animated now={55} className="progress-bar-color" />
             </div>
             <p className="progress-title">Learning Skills 80%</p>
-            <div className="porgress-div" ref={(el) => progressBarsRef.current.push(el)}>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
               <ProgressBar animated now={80} className="progress-bar-color" />
             </div>
           </Col>
