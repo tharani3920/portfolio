@@ -82,7 +82,9 @@ const Home = () => {
                     <div className="year">May 2021 to Apr 2023</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>MCA</h5>
+                      <h5>
+                        MCA <span className="percent">with </span> 81%
+                      </h5>
                       <p>Kongu Arts and Science College.</p>
                     </div>
                   </div>
@@ -93,7 +95,10 @@ const Home = () => {
                     <div className="year">May 2018 to Mar 2021</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>B.Sc (Computer Science)</h5>
+                      <h5>
+                        B.Sc (Computer Science)
+                        <span className="percent">with </span> 76%
+                      </h5>
                       <p>Kongu Arts and Science College.</p>
                     </div>
                   </div>
@@ -104,7 +109,9 @@ const Home = () => {
                     <div className="year">May 2017 to Apr 2018</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>12th (Bio)</h5>
+                      <h5>
+                        12th (Bio) <span className="percent">with </span> 69%
+                      </h5>
                       <p>Vivekananda Vidhayala Matric Hr., Sec., School.</p>
                     </div>
                   </div>

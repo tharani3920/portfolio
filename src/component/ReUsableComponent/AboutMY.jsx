@@ -4,7 +4,7 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/CV_TharaniM.pdf";
+import resume from "../../assets/tharani_c.v.pdf";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
@@ -18,7 +18,7 @@ const AboutMY = () => {
           trigger: progressBar,
           start: "top 80%",
           end: "bottom 20%",
-          toggleActions: "play none none none",
+          toggleActions: "play reset play reset",
         },
         scaleX: 0,
         duration: 1,
