@@ -1,11 +1,11 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import img from "../../assets/my1.jpeg";
 import TypeWriter from "./TypeWriter";
 import { CDBBox, CDBBtn, CDBIcon } from "cdbreact";
-import {gsap} from 'gsap';
+import { gsap } from "gsap";
 import {
   MdOutlineMailOutline,
   MdLocalPhone,
@@ -14,11 +14,11 @@ import {
 } from "react-icons/md";
 
 const FirstView = () => {
-  useEffect (() =>{
-    const rl =gsap.timeline({defaults:{ease:"power1.in"}});
-    rl.from(".my-details",{y:50,opacity:0,duration:0.5,delay:1});
-    rl.from(".my-img",{x:50, opacity:0, duration:0.5,delay:1});
-  })
+  useEffect(() => {
+    const rl = gsap.timeline({ defaults: { ease: "power1.in" } });
+    rl.from(".my-details", { y: 50, opacity: 0, duration: 0.5, delay: 1 });
+    rl.from(".my-img", { x: 50, opacity: 0, duration: 0.5, delay: 1 });
+  });
   return (
     <>
       <div className="first-view-back pt-5 ">
@@ -27,16 +27,16 @@ const FirstView = () => {
             <Row>
               <Col sm={12} md={7} className="my-details">
                 <div className="mt-5">
-                  <div style={{height:"40px"}}>
-                  <TypeWriter />
+                  <div style={{ height: "40px" }}>
+                    <TypeWriter />
                   </div>
                   {/* <h6>HELLO EVERYBODY, I AM</h6> */}
                   <p className="fw-bolder my-name">Tharani M</p>
-                  <h6 className="mb-4">ASSOCIATE SOFTWARE DEVELOPER</h6>
+                  <h6 className="mb-4">WEB DEVELOPER</h6>
                   <p className="my-descri">
                     I am a web alchemist, blending code with creativity to craft
-                    responsive masterpieces, while thriving in the
-                    collaborative symphony of teamwork.
+                    responsive masterpieces, while thriving in the collaborative
+                    symphony of teamwork.
                   </p>
                   <ul className="list-group mb-5 ms-3">
                     <li className="d-flex align-items-center mt-2 hover-eff">
@@ -61,18 +61,34 @@ const FirstView = () => {
                     style={{ width: "250px" }}
                     // className="mt-3"
                   >
-                    <CDBBtn flat outline color="light" className="me-auto p-2 my-links">
-                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL" >
-                      <CDBIcon fab icon="facebook-f" /> </a>
-                    </CDBBtn>
-                    <CDBBtn flat outline color="light" className="me-auto p-2 my-links">
-                    <a href="https://www.linkedin.com/in/tharani3920/" >
-                      <CDBIcon fab icon="linkedin-in" />
+                    <CDBBtn
+                      flat
+                      outline
+                      color="light"
+                      className="me-auto p-2 my-links"
+                    >
+                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL">
+                        <CDBIcon fab icon="facebook-f" />{" "}
                       </a>
                     </CDBBtn>
-                    <CDBBtn flat outline color="light" className="me-auto p-2 my-links">
+                    <CDBBtn
+                      flat
+                      outline
+                      color="light"
+                      className="me-auto p-2 my-links"
+                    >
+                      <a href="https://www.linkedin.com/in/tharani3920/">
+                        <CDBIcon fab icon="linkedin-in" />
+                      </a>
+                    </CDBBtn>
+                    <CDBBtn
+                      flat
+                      outline
+                      color="light"
+                      className="me-auto p-2 my-links"
+                    >
                       <a href="https://www.instagram.com/tharanimatheswaran?igsh=NDAybmZja3k0cWh4">
-                      <CDBIcon fab icon="instagram" />
+                        <CDBIcon fab icon="instagram" />
                       </a>
                     </CDBBtn>
                   </CDBBox>

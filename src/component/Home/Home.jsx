@@ -46,6 +46,17 @@ const Home = () => {
               {selectedTab === "experience" ? (
                 <>
                   <div className="myexperience-div">
+                    <div className="year">Sep 2024 to Present</div>
+                    <div className="indicator"></div>
+                    <div className="year-data">
+                      <h5>Wingslide Technologies Private Limited</h5>
+                      <p>Web Developer</p>
+                    </div>
+                  </div>
+                  <div
+                    className="myexperience-div"
+                    style={{ marginTop: "9rem" }}
+                  >
                     <div className="year">May 2023 to May 2024</div>
                     <div className="indicator"></div>
                     <div className="year-data">
@@ -55,24 +66,13 @@ const Home = () => {
                   </div>
                   <div
                     className="myexperience-div"
-                    style={{ marginTop: "9rem" }}
-                  >
-                    <div className="year">Jan 2023 to Apr 2023</div>
-                    <div className="indicator"></div>
-                    <div className="year-data">
-                      <h5>PeerMe Software Technology Pvt., Ltd.,</h5>
-                      <p>Intern</p>
-                    </div>
-                  </div>
-                  <div
-                    className="myexperience-div"
                     style={{ marginTop: "17rem" }}
                   >
-                    <div className="year">Apr 2021 to Dec 2022</div>
+                    <div className="year">Apr 2021 to Present</div>
                     <div className="indicator"></div>
                     <div className="year-data">
                       <h5>Freelancer</h5>
-                      <p>Frontend Web Developer</p>
+                      <p>Web Developer</p>
                     </div>
                   </div>
                 </>
