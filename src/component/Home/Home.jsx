@@ -49,7 +49,7 @@ const Home = () => {
                     <div className="year">Sep 2024 to Present</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>Wingslide Technologies Private Limited</h5>
+                      <h5>Wingslide Technologies Pvt., Ltd.,</h5>
                       <p>Web Developer</p>
                     </div>
                   </div>
@@ -57,22 +57,23 @@ const Home = () => {
                     className="myexperience-div"
                     style={{ marginTop: "9rem" }}
                   >
-                    <div className="year">May 2023 to May 2024</div>
+                    <div className="year">May 2024 to Aug 2024</div>
+
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>PeerMe Software Technology Pvt., Ltd.,</h5>
-                      <p>Associate Software Developer</p>
+                      <h5>Altruist Technologies Pvt., Ltd.,</h5>
+                      <p>Bussiness Associate</p>
                     </div>
                   </div>
                   <div
                     className="myexperience-div"
                     style={{ marginTop: "17rem" }}
                   >
-                    <div className="year">Apr 2021 to Present</div>
+                    <div className="year">May 2023 to May 2024</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>Freelancer</h5>
-                      <p>Web Developer</p>
+                      <h5>PeerMe Software Technology Pvt., Ltd.,</h5>
+                      <p>Associate Software Developer</p>
                     </div>
                   </div>
                 </>
