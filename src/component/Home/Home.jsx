@@ -11,9 +11,64 @@ import {
 
 const Home = () => {
   const [selectedTab, setSeclectedTab] = useState("experience");
-  const handlealert = () => {
-    window.alert("Just only design Not Functional");
+  // const handlealert = () => {
+  //   window.alert("Just only design Not Functional");
+  // };
+
+   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [responseMsg, setResponseMsg] = useState("");
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.email || !formData.subject) {
+      alert("Please fill all required fields.");
+      return;
+    }
+
+    const payload = new FormData();
+    payload.append("name", formData.name);
+    payload.append("email", formData.email);
+    payload.append("subject", formData.subject);
+    payload.append("message", formData.message);
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzMNjxmltvAnfPzVrBAUpBKmIHsU5jKVypD4MD5ipZMAGjl0J8bjRWl7RW90jVQqXgE/exec",
+        {
+          method: "POST",
+          body: payload,
+        }
+      );
+
+      const text = await response.text();
+      console.log("Response from server:", text);
+
+      if (text.includes("Success")) {
+        setResponseMsg("Form submitted successfully!");
+        alert("Form submitted successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setResponseMsg("Submission failed.");
+        alert("Submission failed.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form.");
+    }
+  };
+
   return (
     <>
       <FirstView />
@@ -122,9 +177,11 @@ const Home = () => {
           </Container>
         </div>
       </section>
+
       <div id="Services">
         <OfferClient />
       </div>
+
       <div id="Blogs" className="blog-s">
         <div className="d-flex justify-content-center flex-column align-items-center">
           <p
@@ -163,6 +220,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+
       <div id="Contact">
         <div className="d-flex justify-content-center flex-column align-items-center">
           <p
@@ -205,32 +263,44 @@ const Home = () => {
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Enter your Name"
                   className="contact-input mt-4"
+                  value={formData.name}
+            onChange={handleChange}
                 />
                 <input
                   type="email"
+                name="email"
                   placeholder="Enter Email Address"
                   className="contact-input"
+                  value={formData.email}
+            onChange={handleChange}
                 />
                 <input
                   type="text"
+                name="subject"
                   placeholder="Enter Subject"
                   className="contact-input"
+                   value={formData.subject}
+            onChange={handleChange}
                 />
               </div>
             </Col>
             <Col md={4} xs={12}>
-              {" "}
               <textarea
                 placeholder="Enter Message"
+              name="message"
                 className="contact-input mt-4"
                 style={{ height: "100px" }}
+                 value={formData.message}
+          onChange={handleChange}
               />
-              <button className="send-mess" onClick={handlealert}>
+              <button className="send-mess" onClick={handleSubmit}>
                 {" "}
                 Send Message
               </button>
+              <p style={{ marginTop: "10px", color: "green" }}>{responseMsg}</p>
             </Col>
           </Row>
         </Container>
