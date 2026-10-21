@@ -101,23 +101,23 @@ const Home = () => {
               {selectedTab === "experience" ? (
                 <>
                   <div className="myexperience-div">
-                    <div className="year">Sep 2024 to Present</div>
+                    <div className="year">June 2026 to Sep 2026</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>Wingslide Technologies Pvt., Ltd.,</h5>
-                      <p>Web Developer</p>
+                      <h5>Vsplash Techlabs Pvt., Ltd.,</h5>
+                      <p>Wordpress Integrator</p>
                     </div>
                   </div>
                   <div
                     className="myexperience-div"
                     style={{ marginTop: "9rem" }}
                   >
-                    <div className="year">May 2024 to Aug 2024</div>
+                    <div className="year">Sep 2024 to June 2026</div>
 
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>Altruist Technologies Pvt., Ltd.,</h5>
-                      <p>Bussiness Associate</p>
+                       <h5>Wingslide Technologies Pvt., Ltd.,</h5>
+                      <p>Web Developer</p>
                     </div>
                   </div>
                   <div
