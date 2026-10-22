@@ -4,7 +4,7 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/tharani_c.v.pdf";
+import resume from "../../assets/Tharani_M.pdf";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
@@ -60,8 +60,8 @@ const AboutMY = () => {
                     <span className="about-icon">
                       <BiCoinStack />
                     </span>
-                    <h4 style={{ marginTop: "10px" }}>₹3.5K</h4>
-                    <p className="p-font">Total Donation</p>
+                    <h4 style={{ marginTop: "10px" }}>3+</h4>
+                    <p className="p-font">Years Experiance</p>
                   </div>
                 </Col>
                 <Col sm={12} md={4}>
@@ -69,7 +69,7 @@ const AboutMY = () => {
                     <span className="about-icon">
                       <LuBookMinus />
                     </span>
-                    <h4 style={{ marginTop: "10px" }}>2</h4>
+                    <h4 style={{ marginTop: "10px" }}>50+</h4>
                     <p className="p-font">Total Projects</p>
                   </div>
                 </Col>
