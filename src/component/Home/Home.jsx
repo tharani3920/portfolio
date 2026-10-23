@@ -9,13 +9,11 @@ import {
   MdOutlineMailOutline,
 } from "react-icons/md";
 
+
 const Home = () => {
   const [selectedTab, setSeclectedTab] = useState("experience");
-  // const handlealert = () => {
-  //   window.alert("Just only design Not Functional");
-  // };
 
-   const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
@@ -23,51 +21,66 @@ const Home = () => {
   });
 
   const [responseMsg, setResponseMsg] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
-  const handleSubmit = async () => {
-    if (!formData.name || !formData.email || !formData.subject) {
-      alert("Please fill all required fields.");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.subject.trim()
+    ) {
+      setResponseMsg("Please fill in all required fields.");
       return;
     }
 
-    const payload = new FormData();
-    payload.append("name", formData.name);
-    payload.append("email", formData.email);
-    payload.append("subject", formData.subject);
-    payload.append("message", formData.message);
+    setIsSubmitting(true);
+    setResponseMsg("");
+
+    const payload = new URLSearchParams();
+    payload.append("name", formData.name.trim());
+    payload.append("email", formData.email.trim());
+    payload.append("subject", formData.subject.trim());
+    payload.append("message", formData.message.trim());
 
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzMNjxmltvAnfPzVrBAUpBKmIHsU5jKVypD4MD5ipZMAGjl0J8bjRWl7RW90jVQqXgE/exec",
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwnm_0zi_HD1oaBUPC--_qgCy4H6bucTX_anrSIo1t6FJgvOYfoVvZ9DavuIGFhWFbo/exec",
         {
           method: "POST",
           body: payload,
+          mode: "no-cors",
         }
       );
 
-      const text = await response.text();
-      console.log("Response from server:", text);
+      setResponseMsg(
+        "Thank you! Your message has been sent."
+      );
 
-      if (text.includes("Success")) {
-        setResponseMsg("Form submitted successfully!");
-        alert("Form submitted successfully!");
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        setResponseMsg("Submission failed.");
-        alert("Submission failed.");
-      }
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Error submitting form.");
+      console.error("Contact form error:", error);
+      setResponseMsg("Unable to send your message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
+
 
   return (
     <>
@@ -104,7 +117,7 @@ const Home = () => {
                     <div className="year">June 2026 to Sep 2026</div>
                     <div className="indicator"></div>
                     <div className="year-data">
-                      <h5>Vsplash Techlabs Pvt., Ltd.,</h5>
+                      <h5>Vsplash Techlabs <br />Pvt., Ltd.,</h5>
                       <p>Wordpress Integrator</p>
                     </div>
                   </div>
@@ -241,6 +254,7 @@ const Home = () => {
           ></iframe>
         </div>
         <Container className="pb-5">
+        <form onSubmit={handleSubmit}>
           <Row>
             <Col md={4} xs={12}>
               <ul>
@@ -259,50 +273,33 @@ const Home = () => {
                 </li>
               </ul>
             </Col>
-            <Col md={4} xs={12}>
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter your Name"
-                  className="contact-input mt-4"
-                  value={formData.name}
-            onChange={handleChange}
-                />
-                <input
-                  type="email"
-                name="email"
-                  placeholder="Enter Email Address"
-                  className="contact-input"
-                  value={formData.email}
-            onChange={handleChange}
-                />
-                <input
-                  type="text"
-                name="subject"
-                  placeholder="Enter Subject"
-                  className="contact-input"
-                   value={formData.subject}
-            onChange={handleChange}
-                />
-              </div>
-            </Col>
-            <Col md={4} xs={12}>
-              <textarea
-                placeholder="Enter Message"
-              name="message"
-                className="contact-input mt-4"
-                style={{ height: "100px" }}
-                 value={formData.message}
-          onChange={handleChange}
-              />
-              <button className="send-mess" onClick={handleSubmit}>
-                {" "}
-                Send Message
-              </button>
-              <p style={{ marginTop: "10px", color: "green" }}>{responseMsg}</p>
-            </Col>
+          
+ <Col md={4} xs={12}>
+      <input type="text" name="name" placeholder="Enter your Name"
+        className="contact-input mt-4" value={formData.name}
+        onChange={handleChange} required />
+      <input type="email" name="email" placeholder="Enter Email Address"
+        className="contact-input" value={formData.email}
+        onChange={handleChange} required />
+      <input type="text" name="subject" placeholder="Enter Subject"
+        className="contact-input" value={formData.subject}
+        onChange={handleChange} required />
+    </Col>
+
+    <Col md={4} xs={12}>
+      <textarea name="message" placeholder="Enter Message"
+        className="contact-input mt-4" style={{ height: "100px" }}
+        value={formData.message} onChange={handleChange} />
+
+      <button type="submit" className="send-mess" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send Message"}
+      </button>
+
+      <p style={{ marginTop: "10px", color: "green" }}>{responseMsg}</p>
+    </Col>
+
           </Row>
+          </form>
         </Container>
       </div>
     </>

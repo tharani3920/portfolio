@@ -21,10 +21,11 @@ const Footer = () => {
           <MDBCol lg="5" md="12" className="mb-4 mb-md-0">
             <h5 className="text-uppercase">About Me</h5>
             <p className="footer-p">
-              As a dedicated web developer proficient in the MERN stack, I
-              seamlessly blend creativity with technical expertise to craft
-              innovative digital solutions that captivate audiences and drive
-              engagement.
+              As a WordPress and Front-End Developer with around 3 years of
+experience, I specialize in building responsive, user-friendly
+websites using WordPress, Elementor, Beaver Builder, HTML, CSS,
+JavaScript, and Bootstrap. I transform design concepts into
+visually appealing websites that deliver a smooth user experience.
             </p>
           </MDBCol>
 
