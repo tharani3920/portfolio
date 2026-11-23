@@ -32,28 +32,37 @@ const FirstView = () => {
                   </div>
                   {/* <h6>HELLO EVERYBODY, I AM</h6> */}
                   <p className="fw-bolder my-name">Tharani M</p>
-                  <h6 className="mb-4">WEB DEVELOPER</h6>
+                  <h6 className="mb-4">WordPress & Front-End Developer</h6>
                   <p className="my-descri">
-                    I am a web alchemist, blending code with creativity to craft
-                    responsive masterpieces, while thriving in the collaborative
-                    symphony of teamwork.
+                    I build responsive, user-friendly websites using WordPress, Elementor, Beaver Builder, HTML, CSS, JavaScript, and Bootstrap.
                   </p>
                   <ul className="list-group mb-5 ms-3">
-                    <li className="d-flex align-items-center mt-2 hover-eff">
+                    {/* <li className="d-flex align-items-center mt-2 hover-eff">
                       <MdCalendarMonth className="me-3 my-icons" />
                       <span className="my-info"> 3rd September, 2000</span>
-                    </li>
-                    <li className=" d-flex align-items-center mt-2 hover-eff">
-                      <MdOutlineMailOutline className="me-3 my-icons" />
-                      <span className="my-info">tharani3920@gmail.com</span>
-                    </li>
-                    <li className=" d-flex align-items-center mt-2 hover-eff">
-                      <MdLocalPhone className="me-3 my-icons" />
-                      <span className="my-info">+91 6374256889</span>
-                    </li>
+                    </li> */}
+                    <li className="d-flex align-items-center mt-2 hover-eff">
+  <MdOutlineMailOutline className="me-3 my-icons" />
+  <a
+    href="mailto:tharani3920@gmail.com"
+    className="my-info"
+  >
+    tharani3920@gmail.com
+  </a>
+</li>
+
+<li className="d-flex align-items-center mt-2 hover-eff">
+  <MdLocalPhone className="me-3 my-icons" />
+  <a
+    href="tel:+916374256889"
+    className="my-info"
+  >
+    +91 6374256889
+  </a>
+</li>
                     <li className=" d-flex align-items-center mt-2 hover-eff">
                       <MdOutlineHome className="me-3 my-icons" />
-                      <span className="my-info">50, Kongu Nagar, Erode.</span>
+                      <span className="my-info">50, Kongu Nagar, Erode, Tamil Nadu.</span>
                     </li>
                   </ul>
                   <CDBBox
@@ -61,34 +70,49 @@ const FirstView = () => {
                     style={{ width: "250px" }}
                     // className="mt-3"
                   >
+                    
                     <CDBBtn
                       flat
                       outline
                       color="light"
                       className="me-auto p-2 my-links"
                     >
-                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL">
-                        <CDBIcon fab icon="facebook-f" />{" "}
-                      </a>
-                    </CDBBtn>
-                    <CDBBtn
-                      flat
-                      outline
-                      color="light"
-                      className="me-auto p-2 my-links"
-                    >
-                      <a href="https://www.linkedin.com/in/tharani3920/">
+                      <a href="https://www.linkedin.com/in/tharani3920/" target="_blank" >
                         <CDBIcon fab icon="linkedin-in" />
                       </a>
                     </CDBBtn>
                     <CDBBtn
+  flat
+  outline
+  color="light"
+  className="me-auto p-2 my-links"
+>
+  <a
+    href="https://github.com/tharani3920"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <CDBIcon fab icon="github" />
+  </a>
+</CDBBtn>
+                    <CDBBtn
                       flat
                       outline
                       color="light"
                       className="me-auto p-2 my-links"
                     >
-                      <a href="https://www.instagram.com/tharanimatheswaran?igsh=NDAybmZja3k0cWh4">
+                      <a href="https://www.instagram.com/tharanimatheswaran?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank">
                         <CDBIcon fab icon="instagram" />
+                      </a>
+                    </CDBBtn>
+                    <CDBBtn
+                      flat
+                      outline
+                      color="light"
+                      className="me-auto p-2 my-links"
+                    >
+                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL" target="_blank">
+                        <CDBIcon fab icon="facebook-f" />{" "}
                       </a>
                     </CDBBtn>
                   </CDBBox>

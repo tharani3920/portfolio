@@ -22,7 +22,8 @@ const Header = () => {
         <Nav className="ml-auto">
           <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
           <a href="#About" className='nav-link'>About</a>
-          <a href="#Services" className='nav-link'>Service</a>
+          <a href="#Services" className='nav-link'>Skills</a>
+          <a href="#Projects" className="nav-link">Projects</a>
           <a href="#Blogs" className='nav-link'>Blog</a>
           <a href="#Contact" className='nav-link'>Contact</a>
 
