@@ -34,10 +34,7 @@ const AboutMY = () => {
             <div>
               <p className="my-heading fw-bolder">About Myself</p>
               <p className="my-descri">
-                As a dedicated web developer proficient in the MERN stack, I
-                seamlessly blend creativity with technical expertise to craft
-                innovative digital solutions that captivate audiences and drive
-                engagement.
+                I'm a Front-End and WordPress Developer with around 3 years of experience building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, Bootstrap, WordPress, Elementor, and Beaver Builder. Passionate about creating great websites and learning new technologies.
               </p>
               <div>
                 <a
