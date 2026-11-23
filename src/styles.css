@@ -33,7 +33,7 @@ a {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 30px;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 .white-div {
   position: relative;
@@ -333,9 +333,10 @@ a {
   font-family: poppins;
 }
 .my-img {
-  background-image: url(../src/assets/my1.jpeg);
+  /* background-image: url(../src/assets/my1.jpeg); */
+  background-image: url(../src/assets/my.png);
   background-size: cover;
-  height: 580px;
+  height: 520px;
 }
 .hovers-eff {
   margin-top: 30px !important;

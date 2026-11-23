@@ -85,7 +85,7 @@ const Home = () => {
   return (
     <>
       <FirstView />
-      <div id="About" style={{ paddingTop: "5rem" }}>
+      <div id="About" style={{ paddingTop: "5rem", paddingBottom: "4rem" }}>
         <AboutMY />
       </div>
       <section>
