@@ -1,56 +1,74 @@
-import React, { useEffect, useRef,} from 'react';
+
+import React, { useEffect, useRef, useCallback } from 'react';
+
 const TypeWriters = ({ words, wait = 3000 }) => {
   const txtElementRef = useRef(null);
-  let txt = '';
-  let wordIndex = 0;
-  let isDeleting = false;
+  const timeoutRef = useRef(null);
 
-  const type = () => {
-    const current = wordIndex % words.length;
-    const fullTxt = words[current];
+  const type = useCallback(() => {
+    let txt = '';
+    let wordIndex = 0;
+    let isDeleting = false;
 
-    if (isDeleting) {
-      txt = fullTxt.substring(0, txt.length - 1);
-    } else {
-      txt = fullTxt.substring(0, txt.length + 1);
-    }
+    const typing = () => {
+      if (!words || words.length === 0) return;
 
-    if (txtElementRef.current) {
-      txtElementRef.current.innerHTML = `<span className="typewrite-txt typewrite-txt-color">${txt}</span>`;
-    }
+      const current = wordIndex % words.length;
+      const fullTxt = words[current];
 
-    let typeSpeed = 100;
+      if (isDeleting) {
+        txt = fullTxt.substring(0, txt.length - 1);
+      } else {
+        txt = fullTxt.substring(0, txt.length + 1);
+      }
 
-    if (isDeleting) {
-      typeSpeed /= 2;
-    }
+      if (txtElementRef.current) {
+        txtElementRef.current.innerHTML = `<span class="typewrite-txt typewrite-txt-color">${txt}</span>`;
+      }
 
-    if (!isDeleting && txt === fullTxt) {
-      typeSpeed = wait;
-      isDeleting = true;
-    } else if (isDeleting && txt === '') {
-      isDeleting = false;
-      wordIndex++;
-      typeSpeed = 300;
-    }
+      let typeSpeed = 100;
 
-    setTimeout(type, typeSpeed);
-  };
+      if (isDeleting) {
+        typeSpeed /= 2;
+      }
+
+      if (!isDeleting && txt === fullTxt) {
+        typeSpeed = wait;
+        isDeleting = true;
+      } else if (isDeleting && txt === '') {
+        isDeleting = false;
+        wordIndex++;
+        typeSpeed = 300;
+      }
+
+      timeoutRef.current = setTimeout(typing, typeSpeed);
+    };
+
+    typing();
+  }, [words, wait]);
 
   useEffect(() => {
     type();
-  }, []); 
 
-  return <span ref={txtElementRef} className="typewrite-txt-type" dangerouslySetInnerHTML={{ __html: '' }} />;
+    return () => {
+      clearTimeout(timeoutRef.current);
+    };
+  }, [type]);
+
+  return (
+    <span
+      ref={txtElementRef}
+      className="typewrite-txt-type"
+    />
+  );
 };
 
 const TypeWriter = () => {
- 
   return (
     <div>
-      <h1 className='typewriter-word'>
+      <h1 className="typewriter-word">
         <TypeWriters
-          words={[ "Hello Everyone, I am",]}
+          words={["Hello Everyone, I am"]}
           wait={2000}
         />
       </h1>
