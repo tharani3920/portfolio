@@ -10,7 +10,6 @@ import {
   MdOutlineMailOutline,
   MdLocalPhone,
   MdOutlineHome,
-  MdCalendarMonth,
 } from "react-icons/md";
 
 const FirstView = () => {
@@ -77,7 +76,7 @@ const FirstView = () => {
                       color="light"
                       className="me-auto p-2 my-links"
                     >
-                      <a href="https://www.linkedin.com/in/tharani3920/" target="_blank" >
+                      <a href="https://www.linkedin.com/in/tharani3920/" target="_blank" rel="noreferrer">
                         <CDBIcon fab icon="linkedin-in" />
                       </a>
                     </CDBBtn>
@@ -101,7 +100,7 @@ const FirstView = () => {
                       color="light"
                       className="me-auto p-2 my-links"
                     >
-                      <a href="https://www.instagram.com/tharanimatheswaran?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank">
+                      <a href="https://www.instagram.com/tharanimatheswaran?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">
                         <CDBIcon fab icon="instagram" />
                       </a>
                     </CDBBtn>
@@ -111,7 +110,7 @@ const FirstView = () => {
                       color="light"
                       className="me-auto p-2 my-links"
                     >
-                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL" target="_blank">
+                      <a href="https://www.facebook.com/tharani.matheshwaran?mibextid=ZbWKwL" target="_blank" rel="noreferrer">
                         <CDBIcon fab icon="facebook-f" />{" "}
                       </a>
                     </CDBBtn>

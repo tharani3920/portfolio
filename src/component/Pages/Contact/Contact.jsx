@@ -13,7 +13,7 @@ const Contact = () => {
     <div>
       <Breadcrumbs />
       <div className='container mt-5 pb-5 d-flex justify-content-center'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62589.3714598973!2d77.67411115865775!3d11.3467074362816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710598809396!5m2!1sen!2sin" width="1100" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62589.3714598973!2d77.67411115865775!3d11.3467074362816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710598809396!5m2!1sen!2sin" width="1100" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  title="Google Maps Location"></iframe>
       </div>
       <Container className='pb-5'>
       <Row>

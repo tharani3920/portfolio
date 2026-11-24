@@ -254,6 +254,7 @@ const Home = () => {
             height="450"
             allowfullscreen=""
             loading="lazy"
+             title="Google Maps Location"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
