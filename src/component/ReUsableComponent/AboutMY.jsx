@@ -4,7 +4,7 @@ import { BiCoinStack } from "react-icons/bi";
 import { LuBookMinus } from "react-icons/lu";
 import { IoMdContacts } from "react-icons/io";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/Tharani.pdf";
+import resume from "../../assets/Tharani_M.pdf";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AboutMY = () => {
@@ -17,8 +17,7 @@ const AboutMY = () => {
         scrollTrigger: {
           trigger: progressBar,
           start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reset play reset",
+           toggleActions: "play none none none",
         },
         scaleX: 0,
         duration: 1,
@@ -34,7 +33,7 @@ const AboutMY = () => {
             <div>
               <p className="my-heading fw-bolder">About Myself</p>
               <p className="my-descri">
-                I'm a Front-End and WordPress Developer with around 3 years of experience building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, Bootstrap, WordPress, Elementor, and Beaver Builder. Passionate about creating great websites and learning new technologies.
+                I'm a Front-End and WordPress Developer with around 3 years of experience building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, Bootstrap, React, WordPress, Elementor, and Beaver Builder. Passionate about creating great websites and learning new technologies.
               </p>
               <div>
                 <a
@@ -83,40 +82,40 @@ const AboutMY = () => {
             </div>
           </Col>
           <Col sm={12} md={6} className="media-col">
-            <p className="progress-title">Designing 85%</p>
+            <p className="progress-title">Designing 92%</p>
             <div
               className="porgress-div"
               ref={(el) => progressBarsRef.current.push(el)}
             >
-              <ProgressBar animated now={85} className="progress-bar-color" />
+              <ProgressBar animated now={92} className="progress-bar-color" />
             </div>
-            <p className="progress-title">Web Development 90% </p>
+            <p className="progress-title">Web Development 95% </p>
             <div
               className="porgress-div"
               ref={(el) => progressBarsRef.current.push(el)}
             >
-              <ProgressBar animated now={90} className="progress-bar-color" />
+              <ProgressBar animated now={95} className="progress-bar-color" />
             </div>
-            <p className="progress-title">Overall Coding 79%</p>
-            <div
-              className="porgress-div"
-              ref={(el) => progressBarsRef.current.push(el)}
-            >
-              <ProgressBar animated now={79} className="progress-bar-color" />
-            </div>
-            <p className="progress-title">Back-end 55%</p>
-            <div
-              className="porgress-div"
-              ref={(el) => progressBarsRef.current.push(el)}
-            >
-              <ProgressBar animated now={55} className="progress-bar-color" />
-            </div>
-            <p className="progress-title">Learning Skills 80%</p>
+            <p className="progress-title">Overall Coding 80%</p>
             <div
               className="porgress-div"
               ref={(el) => progressBarsRef.current.push(el)}
             >
               <ProgressBar animated now={80} className="progress-bar-color" />
+            </div>
+            <p className="progress-title">Back-end 65%</p>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
+              <ProgressBar animated now={65} className="progress-bar-color" />
+            </div>
+            <p className="progress-title">Learning Skills 90%</p>
+            <div
+              className="porgress-div"
+              ref={(el) => progressBarsRef.current.push(el)}
+            >
+              <ProgressBar animated now={90} className="progress-bar-color" />
             </div>
           </Col>
         </Row>

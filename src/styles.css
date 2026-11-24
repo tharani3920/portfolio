@@ -243,7 +243,7 @@ a {
   color: #ffffffbf;
   font-size: 16px;
   font-weight: 600;
-  width: 180px;
+  width: 181px;
   font-family: poppins;
 }
 .year-data {
@@ -421,6 +421,10 @@ a {
   ) !important;
   padding-bottom: 2rem;
 }
+#About{
+  padding-top: 5rem; 
+  padding-bottom: 4rem;
+}
 /*edia query */
 @media (max-width: 768px) {
   .my-img {
@@ -466,6 +470,10 @@ a {
     font-weight: 200;
   }
   .edu-exp-sec {
-    height: 70vh;
+    height: 90vh;
   }
+  #About{
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
+}
 }

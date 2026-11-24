@@ -34,7 +34,7 @@ const FirstView = () => {
                   <p className="fw-bolder my-name">Tharani M</p>
                   <h6 className="mb-4">WordPress & Front-End Developer</h6>
                   <p className="my-descri">
-                    I build responsive, user-friendly websites using WordPress, Elementor, Beaver Builder, HTML, CSS, JavaScript, and Bootstrap.
+                    I build responsive, user-friendly websites using WordPress, Elementor, Beaver Builder, HTML, CSS, JavaScript, Bootstrap and React.
                   </p>
                   <ul className="list-group mb-5 ms-3">
                     {/* <li className="d-flex align-items-center mt-2 hover-eff">

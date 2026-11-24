@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FirstView from "../ReUsableComponent/FirstView";
 import AboutMY from "../ReUsableComponent/AboutMY";
+import MyProject from "../ReUsableComponent/MyProject";
 import { Col, Container, Row } from "react-bootstrap";
 import OfferClient from "../ReUsableComponent/OfferClient";
 import {
@@ -85,7 +86,7 @@ const Home = () => {
   return (
     <>
       <FirstView />
-      <div id="About" style={{ paddingTop: "5rem", paddingBottom: "4rem" }}>
+      <div id="About">
         <AboutMY />
       </div>
       <section>
@@ -232,6 +233,9 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
+      </div>
+      <div id="Projects">
+        <MyProject />
       </div>
 
       <div id="Contact">
